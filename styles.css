@@ -234,6 +234,12 @@ h3{ font-size: 1.02rem; color: var(--ice); margin-top: 14px; }
 .speaker .name{ font-weight:600; }
 .speaker .note{ font-size: 0.9rem; color: var(--muted2); }
 
+.speaker .affiliation{
+  font-size: 0.88rem;
+  color: var(--muted2);
+  margin-top: 2px;
+}
+
 /* Schedule (mobile-first cards) */
 .day{
   margin-top: 10px;
@@ -255,7 +261,7 @@ h3{ font-size: 1.02rem; color: var(--ice); margin-top: 14px; }
   padding: 10px 12px;
   border-bottom: 1px solid var(--line);
   display:grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: max-content 1fr;
   gap: 10px;
 }
 .slot:last-child{ border-bottom: none; }
